@@ -1,5 +1,12 @@
 
 
+## [0.0.3](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.2...0.0.3) (2024-07-14)
+
+
+### Features
+
+* change package type export name ([0862ba1](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/0862ba1d9ef2befbdbf165b8e3ad71e72c4549c7))
+
 ## 0.0.2 (2024-07-14)
 
 
