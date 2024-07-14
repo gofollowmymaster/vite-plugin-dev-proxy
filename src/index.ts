@@ -4,12 +4,13 @@ import httpProxy, { createProxyServer } from 'http-proxy';
 import { IncomingMessage, ServerResponse } from 'http';
 
 const PLUGIN_NAME = 'vite-plugin-api-proxy';
+const proxy:httpProxy = createProxyServer();
+
 export interface apiMockOption {
   mockServerMap: Map<string|RegExp, string>;
   printLog: boolean;
 }
-
-export async function requestMiddleware(proxy: httpProxy, opt: apiMockOption) {
+async function requestMiddleware( opt: apiMockOption) {
   const { printLog = true, mockServerMap } = opt;
   const mockItem = Array.from(mockServerMap);
   mockItem.forEach((item) => {
@@ -48,8 +49,7 @@ export async function requestMiddleware(proxy: httpProxy, opt: apiMockOption) {
   return middleware;
 }
 
-function createApiProxyPlugin(opt: apiMockOption): PluginOption {
-  const proxy = createProxyServer();
+function devProxy(opt: apiMockOption): PluginOption {
   return {
     name: PLUGIN_NAME,
     apply: 'serve',
@@ -60,10 +60,10 @@ function createApiProxyPlugin(opt: apiMockOption): PluginOption {
         return;
       }
 
-      const middleware = await requestMiddleware(proxy, opt);
+      const middleware = await requestMiddleware( opt);
       middlewares.use(middleware);
     }
   };
 }
 
-export { createApiProxyPlugin };
+export default devProxy;
