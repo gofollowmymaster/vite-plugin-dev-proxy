@@ -4,7 +4,9 @@
   "description": "A Proxy plugin for vite",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "test":"",
+    "release": "release-it"
   },
   "keywords": [
     "vite-plugin",
@@ -13,12 +15,16 @@
   "type": "commonjs",
   "author": "gofollowmymaster",
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "http-proxy": "^1.18.1"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "@types/http-proxy": "^1.17.14",
+    "release-it": "^17.6.0",
     "typescript": "^5.5.3",
     "vite": "^5.3.3"
   }
