@@ -1,0 +1,25 @@
+{
+  "name": "vite-plugin-dev-proxy",
+  "version": "1.0.0",
+  "description": "A Proxy plugin for vite",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "keywords": [
+    "vite-plugin",
+    "proxy"
+  ],
+  "type": "commonjs",
+  "author": "gofollowmymaster",
+  "license": "MIT",
+  "files": ["dist"],
+  "peerDependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "devDependencies": {
+    "@types/http-proxy": "^1.17.14",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3"
+  }
+}
