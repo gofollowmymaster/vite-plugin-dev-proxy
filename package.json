@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "A Proxy plugin for vite",
   "main": "dist/index.js",
-  "types": "module",
+  "type": "module",
   "scripts": {
     "build": "tsc -p .",
     "test": "cd .",
@@ -15,7 +15,6 @@
     "vite-plugin",
     "proxy"
   ],
-  "type": "commonjs",
   "author": "gofollowmymaster",
   "license": "MIT",
   "files": [
