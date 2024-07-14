@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-dev-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Proxy plugin for vite",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,6 @@
     "release:patch": "release-it patch",
     "release:minor": "release-it minor",
     "release:major": "release-it major"
-
   },
   "keywords": [
     "vite-plugin",
