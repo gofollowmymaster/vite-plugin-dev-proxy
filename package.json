@@ -1,11 +1,11 @@
 {
   "name": "vite-plugin-dev-proxy",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Proxy plugin for vite",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p .",
-    "test":"",
+    "test": "cd .",
     "release": "release-it"
   },
   "keywords": [
