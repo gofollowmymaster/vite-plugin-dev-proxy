@@ -2,7 +2,7 @@
   "name": "vite-plugin-dev-proxy",
   "version": "0.0.7",
   "description": "A Proxy plugin for vite",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
   "publishConfig": {
     "main": "./lib/index.js",
     "module": "./es/index.js",
