@@ -1,5 +1,13 @@
 
 
+## [0.0.4](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.3...0.0.4) (2024-07-15)
+
+
+### Features
+
+* 代理参数不在使用Map ([81cef6a](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/81cef6a437dd4af597b387df8d8bf28bc4ce3ea2))
+* import commonjs ([a2a6169](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/a2a6169a977b30f930491e60d87c019d139fd6c6))
+
 ## [0.0.3](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.2...0.0.3) (2024-07-14)
 
 
