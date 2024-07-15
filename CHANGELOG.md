@@ -1,5 +1,13 @@
 
 
+## [0.0.7](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.5...0.0.7) (2024-07-15)
+
+
+### Bug Fixes
+
+* 导出文件修改 ([b5870c8](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/b5870c8ca5d1a8d7d496e403e8f5f0f7e98df0f6))
+* type 为 commonjs ([d4d0e26](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/d4d0e26ab634fa0a91911e0f4307fae9103ad9d3))
+
 ## [0.0.5](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.4...0.0.5) (2024-07-15)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-dev-proxy",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Proxy plugin for vite",
   "main": "src/index.ts",
   "publishConfig": {
@@ -22,7 +22,8 @@
   "author": "gofollowmymaster",
   "license": "MIT",
   "files": [
-    "lib","es"
+    "lib",
+    "es"
   ],
   "dependencies": {
     "http-proxy": "^1.18.1"
