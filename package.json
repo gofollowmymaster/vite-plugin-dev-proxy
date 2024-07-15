@@ -3,7 +3,6 @@
   "version": "0.0.5",
   "description": "A Proxy plugin for vite",
   "main": "src/index.ts",
-  "type": "module",
   "publishConfig": {
     "main": "./lib/index.js",
     "module": "./es/index.js",
