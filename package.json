@@ -23,7 +23,7 @@
   "author": "gofollowmymaster",
   "license": "MIT",
   "files": [
-    "dist"
+    "lib","es"
   ],
   "dependencies": {
     "http-proxy": "^1.18.1"
