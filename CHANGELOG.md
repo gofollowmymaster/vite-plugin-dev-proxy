@@ -1,5 +1,12 @@
 
 
+## [0.0.8](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.7...0.0.8) (2024-07-15)
+
+
+### Features
+
+* package.json main字段 变更 ([f6d9832](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/f6d983219251cc5763dfafe11b2c9d22e85269d1))
+
 ## [0.0.7](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.5...0.0.7) (2024-07-15)
 
 
