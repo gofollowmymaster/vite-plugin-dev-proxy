@@ -1,5 +1,12 @@
 
 
+## [0.0.5](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.4...0.0.5) (2024-07-15)
+
+
+### Bug Fixes
+
+* 打包采用vite 支持es/cjs ([aad6ae4](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/aad6ae4fa24db83470368ec60a6ae3eb90a571d4))
+
 ## [0.0.4](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.3...0.0.4) (2024-07-15)
 
 

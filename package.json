@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-dev-proxy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Proxy plugin for vite",
   "main": "src/index.ts",
   "type": "module",
