@@ -12,7 +12,8 @@
         "after:bump": [
             "pnpm run build",
             "pnpm test"
-        ]
+        ],
+        "after:release": "curl -X PUT https://registry-direct.npmmirror.com/-/package/${name}/syncs "
     },
     "plugins": {
         "@release-it/conventional-changelog": {

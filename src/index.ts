@@ -7,15 +7,15 @@ const PLUGIN_NAME = "vite-plugin-api-proxy";
 const proxy: httpProxy = createProxyServer();
 
 export interface apiMockOption {
-  mockServerMap: [string | RegExp, string][];
+  proxyServerMap: [string | RegExp, string][];
   printLog: boolean;
 }
 async function requestMiddleware(opt: apiMockOption) {
-  const { printLog = true, mockServerMap } = opt;
+  const { printLog = true, proxyServerMap } = opt;
    
-  mockServerMap.forEach((item) => {
+  proxyServerMap.forEach((item) => {
     console.log(
-      `已为您将${item[0]}前缀请求代理到mock服务器:${item[1]},请确保服务器能正常访问`
+      `已为您将${item[0]}前缀请求代理到服务器:${item[1]},请确保服务器能正常访问`
     );
     if (!(item[0] instanceof RegExp)) {
       item[0] = new RegExp(`^${item[0]}`);
@@ -27,7 +27,7 @@ async function requestMiddleware(opt: apiMockOption) {
     res: ServerResponse,
     next: () => void
   ) => {
-    const matchRequest = mockServerMap.find(([prefix , target]) => {
+    const matchRequest = proxyServerMap.find(([prefix , target]) => {
       return (prefix as RegExp).test(req.url);
     });
 
@@ -36,7 +36,7 @@ async function requestMiddleware(opt: apiMockOption) {
       const proxyUrl = req.url?.replace(prevUrl, '');
 
       printLog &&
-        console.log(`mock:[${req.url}] => `, matchRequest[1] + proxyUrl);
+        console.log(`proxy:[${req.url}] => `, matchRequest[1] + proxyUrl);
       req.url = proxyUrl;
       proxy.web(req, res, {
         target: matchRequest[1],
@@ -56,8 +56,8 @@ function devProxy(opt: apiMockOption): PluginOption {
     apply: "serve",
     enforce: "pre",
     configureServer: async ({ middlewares }) => {
-      const { mockServerMap } = opt;
-      if (mockServerMap.length < 1) {
+      const { proxyServerMap } = opt;
+      if (proxyServerMap.length < 1) {
         return;
       }
 

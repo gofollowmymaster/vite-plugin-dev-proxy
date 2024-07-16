@@ -3,8 +3,8 @@ const { createProxyServer } = httpProxy;
 const PLUGIN_NAME = "vite-plugin-api-proxy";
 const proxy = createProxyServer();
 async function requestMiddleware(opt) {
-  const { printLog = true, mockServerMap } = opt;
-  mockServerMap.forEach((item) => {
+  const { printLog = true, proxyServerMap } = opt;
+  proxyServerMap.forEach((item) => {
     console.log(
       `已为您将${item[0]}前缀请求代理到mock服务器:${item[1]},请确保服务器能正常访问`
     );
@@ -14,7 +14,7 @@ async function requestMiddleware(opt) {
   });
   const middleware = async (req, res, next) => {
     var _a;
-    const matchRequest = mockServerMap.find(([prefix, target]) => {
+    const matchRequest = proxyServerMap.find(([prefix, target]) => {
       return prefix.test(req.url);
     });
     if (matchRequest) {
@@ -39,8 +39,8 @@ function devProxy(opt) {
     apply: "serve",
     enforce: "pre",
     configureServer: async ({ middlewares }) => {
-      const { mockServerMap } = opt;
-      if (mockServerMap.length < 1) {
+      const { proxyServerMap } = opt;
+      if (proxyServerMap.length < 1) {
         return;
       }
       const middleware = await requestMiddleware(opt);
