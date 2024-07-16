@@ -1,10 +1,9 @@
 {
   "name": "vite-plugin-dev-proxy",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A Proxy plugin for vite",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
-
   "publishConfig": {
     "main": "./lib/index.js",
     "module": "./es/index.js",
