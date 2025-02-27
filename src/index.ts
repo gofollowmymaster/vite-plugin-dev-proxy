@@ -64,6 +64,15 @@ function devProxy(opt: apiMockOption): PluginOption {
       const middleware = await requestMiddleware(opt);
       middlewares.use(middleware);
     },
+    configurePreviewServer: async ({ middlewares }) => {
+      const { proxyServerMap } = opt;
+      if (proxyServerMap.length < 1) {
+        return;
+      }
+
+      const middleware = await requestMiddleware(opt);
+      middlewares.use(middleware);
+    },
   };
 }
 
