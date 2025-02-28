@@ -1,5 +1,18 @@
 
 
+# [0.1.0](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.9...0.1.0) (2025-02-28)
+
+
+### Bug Fixes
+
+* 版本调整 ([2772bd8](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/2772bd85ddc84cbbaeaf08234f1198a3b5f47fcb))
+* 文档修改 ([b771584](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/b77158428258bbbf194099713c7fd5f5cec375d1))
+
+
+### Features
+
+* 添加预览服务器代理 ([a4a68d1](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/commit/a4a68d19a95742fdfa7554d26fc89d19956930c3))
+
 ## [0.0.9](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.8...0.0.9) (2024-07-16)
 
 ## [0.0.8](https://github.com/gofollowmymaster/vite-plugin-dev-proxy/compare/0.0.7...0.0.8) (2024-07-15)
